@@ -1,1 +1,41 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is my TESTING PAGE!</h1>
+    <button id="launcher">Launcher</button>
+    <br>
+    <form>
+        <label for="appid">app_id</label><br>
+        <input type="text" id="appid"><br>
+        <label for="userid">user_id</label><br>
+        <input type="text" id="userid"><br>
+        <label for="email">email</label><br>
+        <input type="text" id="email"><br>
+        <label for="custom">Custom Attribute</label><br>
+        <input type="text" id="custom"><br>
+    </form>
+    <button id="boot">BOOT</button>
+    <br>
+    <button id="update">UPDATE</button>
+    <br>
+    <button id="shutdown">SHUTDOWN</button>
+    <script>
+        window.intercomSettings = {
+          app_id: "uppz7mn6",
+          custom_launcher_selector: '#launcher'
+        };
+      </script>
+      
+      <script>
+      // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/uppz7mn6'
+      (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/uppz7mn6';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+      </script>
+      <script src="scripts.js"></script>
+</body>
+</html>
